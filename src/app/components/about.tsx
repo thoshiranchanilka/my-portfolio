@@ -50,7 +50,7 @@ import {
               shadow={'dark-lg'}
               alt={'feature image'}
               src={
-                'https://images2.imgbox.com/7a/a4/yvL6Rett_o.jpg'
+                'https://thumbs2.imgbox.com/7a/a4/yvL6Rett_t.jpg'
               }
               objectFit={'cover'}
               filter={'grayscale(100%)'}
