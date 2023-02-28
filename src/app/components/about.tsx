@@ -44,61 +44,34 @@ import {
     return (
       <Container maxW={'5xl'} py={12}>
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-          <Stack spacing={4}>
-            <Text
-              textTransform={'uppercase'}
-              color={'blue.400'}
-              fontWeight={600}
-              fontSize={'sm'}
-              bg={useColorModeValue('blue.50', 'blue.900')}
-              p={2}
-              alignSelf={'flex-start'}
-              rounded={'md'}>
-              Our Story
-            </Text>
-            <Heading>A digital Product design agency</Heading>
-            <Text color={'gray.500'} fontSize={'lg'}>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore
-            </Text>
-            <Stack
-              spacing={4}
-              divider={
-                <StackDivider
-                  borderColor={useColorModeValue('gray.100', 'gray.700')}
-                />
-              }>
-              <Feature
-                icon={
-                  <Icon as={IoAnalyticsSharp} color={'yellow.500'} w={5} h={5} />
-                }
-                iconBg={useColorModeValue('yellow.100', 'yellow.900')}
-                text={'Business Planning'}
-              />
-              <Feature
-                icon={<Icon as={IoLogoBitcoin} color={'green.500'} w={5} h={5} />}
-                iconBg={useColorModeValue('green.100', 'green.900')}
-                text={'Financial Planning'}
-              />
-              <Feature
-                icon={
-                  <Icon as={IoSearchSharp} color={'purple.500'} w={5} h={5} />
-                }
-                iconBg={useColorModeValue('purple.100', 'purple.900')}
-                text={'Market Analysis'}
-              />
-            </Stack>
-          </Stack>
-          <Flex>
+        <Flex>
             <Image
-              rounded={'md'}
+              rounded={'3xl'}
+              shadow={'dark-lg'}
               alt={'feature image'}
               src={
-                'https://images.unsplash.com/photo-1554200876-56c2f25224fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+                'https://images2.imgbox.com/7a/a4/yvL6Rett_o.jpg'
               }
               objectFit={'cover'}
+              filter={'grayscale(100%)'}
             />
           </Flex>
+          <Stack spacing={4} mt={2}>
+            <Heading>Who am I?</Heading>
+            <Text color={'gray.500'} fontSize={'lg'} textAlign={'justify'}>
+            Hi, I'm Thoshiran Chanilka, a passionate graphics designer 
+            with over 6 years of experience. I specialize in using software 
+            such as Photoshop, Illustrator, After Effects, Figma, and Premier 
+            Pro to bring ideas to life. I've collaborated with local brands to 
+            create designs that stand out and serve a practical purpose. My 
+            portfolio showcases a range of designs that reflect my creativity, 
+            attention to detail, and ability to bring out the best in my clients' 
+            ideas. Designing is not just a profession, it's my passion, and I'm always 
+            excited to take on new challenges and work with clients to create designs 
+            that make a lasting impression.
+            </Text>
+            
+          </Stack>
         </SimpleGrid>
       </Container>
     );

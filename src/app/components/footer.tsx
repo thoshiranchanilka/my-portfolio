@@ -61,7 +61,7 @@ import {
     );
   };
   
-  export default function SmallCentered() {
+  export default function footer() {
     return (
       <Box
         bg={useColorModeValue('gray.50', 'gray.900')}

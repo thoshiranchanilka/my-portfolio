@@ -10,7 +10,7 @@ import {
     useColorModeValue
   } from '@chakra-ui/react';
   
-  export default function SplitScreen() {
+  export default function hero() {
     return (
       <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }} mt={'10'}>
         <Flex p={8} flex={1} align={'center'} justify={'center'} >
@@ -39,6 +39,9 @@ import {
             </Text>
               <Box alignItems={'flex-start'}>
                 <Button
+                  as={'a'}
+                  target={'_blank'}
+                  href={'#'}
                   mt={2}
                   size={'sm'}
                   px={'10'}
