@@ -1,30 +1,19 @@
-import { ReactNode } from 'react';
 import {
   Box,
   Flex,
-  Link,
   Button,
   useColorModeValue,
   Stack,
   useColorMode,
   Image,
-  Center,
 } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 
-const NavLink = ({ children }: { children: ReactNode }) => (
-  <Link
-    px={2}
-    py={1}
-    rounded={'md'}
-    _hover={{
-      textDecoration: 'none',
-      bg: useColorModeValue('gray.200', 'gray.700'),
-    }}
-    href={'#'}>
-    {children}
-  </Link>
-);
+const Logo = (_props: any) => {
+  return (
+    <Image src={useColorModeValue('/logo-light.svg', '/logo-dark.svg')} alt={'logo'} height={9} width={9} shadow={'xl'} rounded={'xl'}/>
+  );
+};
 
 export default function Nav() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -32,8 +21,8 @@ export default function Nav() {
     <>
       <Box bg={useColorModeValue('gray.100', 'gray.900')} px={10}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-          <Box>
-            <Image src={useColorModeValue('logolight.png', 'logoblack.png')} width={8} height={8} />
+          <Box as='a' href='/'>
+            <Logo />
           </Box>
 
           <Flex alignItems={'center'}>

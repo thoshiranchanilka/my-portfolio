@@ -6,9 +6,9 @@ import {
     Stack,
     Text,
     Box,
-    useBreakpointValue,
     useColorModeValue
   } from '@chakra-ui/react';
+
   
   export default function hero() {
     return (
@@ -21,7 +21,7 @@ import {
                 color={'gray.500'}
                 as={'span'}
                 position={'relative'}
-                fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}
+                fontSize={{ base: 'lg', md: '2xl', lg: '2xl' }}
                 >
                 Hello! I'm
               </Text>
@@ -29,12 +29,12 @@ import {
               <Text 
                 color={useColorModeValue('gray.800', 'gray.100')} 
                 as={'span'}
-                fontSize={{ base: '3xl', md: '5xl', lg: '5xl' }}
+                fontSize={{ base: '2xl', md: '4xl', lg: '4xl' }}
                 >
                 Thoshiran Chanilka
               </Text>{' '}
             </Heading>
-            <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
+            <Text fontSize={{ base: 'sm', lg: 'md' }} color={'gray.500'}>
               A creative graphics designer and devoloper.
             </Text>
               <Box alignItems={'flex-start'}>
@@ -48,8 +48,10 @@ import {
                   rounded={'full'}
                   bg={'gray.600'}
                   color={'white'}
+                  shadow={'lg'}
                   _hover={{
                    bg: 'gray.700',
+                   shadow: 'xl'
                  }}>
                  Resume
                 </Button>
