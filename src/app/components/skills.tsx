@@ -2,6 +2,7 @@ import {
     Box,
     Flex,
     Heading,
+    Text,
     SimpleGrid,
     Stat,
     StatLabel,
@@ -24,13 +25,14 @@ import {
         px={{ base: 4, md: 8 }}
         mx={2}
         py={'5'}
-        shadow={'2xl'}
-        rounded={'lg'}>
+        shadow={'xl'}
+        rounded={'lg'}
+        bgColor={useColorModeValue('gray.100', 'gray.700')}>
         <Flex justifyContent={'space-between'}>
           <Box
             my={'auto'}
             color={useColorModeValue('gray.700', 'gray.300')}
-            alignContent={'center'}>
+            >
             {icon}
           </Box>
           <Box pl={{ base: 2, md: 4 }}>
@@ -38,7 +40,7 @@ import {
               {title}
             </StatLabel>
             <StatNumber>
-              <Progress mt={2} rounded={'md'} value={stat} colorScheme={'gray'}/>
+              <Progress mt={2} rounded={'md'} value={stat} colorScheme={'gray'} maxW={'70px'} />
             </StatNumber>
           </Box>
         </Flex>
@@ -53,6 +55,7 @@ import {
           textAlign={'center'}
           fontSize={'4xl'}
           py={10}
+          mb={10}
           >
            Some Skills I have.
         </Heading>
@@ -78,6 +81,9 @@ import {
             icon={<SiAdobepremierepro size={'3em'} />}
           />
         </SimpleGrid>
+        <Text textAlign={'center'} mt={10} fontSize={'lg'}>
+          also I used to work with softwares like Figma, Audacity, Code, Filmora, etc.
+        </Text>
       </Box>
     );
   }

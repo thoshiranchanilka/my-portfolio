@@ -6,39 +6,9 @@ import {
     Heading,
     Text,
     Stack,
-    StackDivider,
-    Icon,
+    Button,
     useColorModeValue,
   } from '@chakra-ui/react';
-  import {
-    IoAnalyticsSharp,
-    IoLogoBitcoin,
-    IoSearchSharp,
-  } from 'react-icons/io5';
-  import { ReactElement } from 'react';
-  
-  interface FeatureProps {
-    text: string;
-    iconBg: string;
-    icon?: ReactElement;
-  }
-  
-  const Feature = ({ text, icon, iconBg }: FeatureProps) => {
-    return (
-      <Stack direction={'row'} align={'center'}>
-        <Flex
-          w={8}
-          h={8}
-          align={'center'}
-          justify={'center'}
-          rounded={'full'}
-          bg={iconBg}>
-          {icon}
-        </Flex>
-        <Text fontWeight={600}>{text}</Text>
-      </Stack>
-    );
-  };
   
   export default function SplitWithImage() {
     return (
@@ -70,7 +40,26 @@ import {
             excited to take on new challenges and work with clients to create designs 
             that make a lasting impression.
             </Text>
-            
+            <Button
+              as={'a'}
+              href={'https://thoshiranslinktree.netlify.app/'}
+              maxW={'140px'}
+              mx={'auto'}
+              px={4}
+              fontSize={'md'}
+              rounded={'full'}
+              bg={useColorModeValue('gray.700', 'gray.600')}
+              color={'white'}
+        
+              _hover={{
+                bg: 'blue.400',
+                boxShadow: '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)',
+              }}
+              _focus={{
+                bg: 'blue.500',
+              }}>
+              LinkTree.
+            </Button>
           </Stack>
         </SimpleGrid>
       </Container>

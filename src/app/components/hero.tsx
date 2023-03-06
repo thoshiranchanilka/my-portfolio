@@ -50,9 +50,9 @@ import {
                   color={'white'}
                   shadow={'lg'}
                   _hover={{
-                   bg: 'gray.700',
-                   shadow: 'xl'
-                 }}>
+                    bg: 'blue.400',
+                    boxShadow: '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)',
+                  }}>
                  Resume
                 </Button>
               </Box>
