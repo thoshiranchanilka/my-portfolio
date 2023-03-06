@@ -54,7 +54,7 @@ import {
           fontSize={'4xl'}
           py={10}
           >
-          Skills.
+           Some Skills I have.
         </Heading>
         <SimpleGrid columns={{ base: 1, md: 4 }} spacing={{ base: 1, lg: 2 }}>
           <StatsCard
