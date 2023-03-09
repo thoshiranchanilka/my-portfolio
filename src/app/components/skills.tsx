@@ -6,6 +6,7 @@ import {
     SimpleGrid,
     Stat,
     StatLabel,
+    Stack,
     StatNumber,
     useColorModeValue,
   } from '@chakra-ui/react';
@@ -28,7 +29,7 @@ import {
         shadow={'xl'}
         rounded={'lg'}
         bgColor={useColorModeValue('gray.100', 'gray.700')}>
-        <Flex justifyContent={'space-between'}>
+        <Flex justifyContent={'center'}>
           <Box
             my={'auto'}
             color={useColorModeValue('gray.700', 'gray.300')}
@@ -40,7 +41,7 @@ import {
               {title}
             </StatLabel>
             <StatNumber>
-              <Progress mt={2} rounded={'md'} value={stat} colorScheme={'gray'} maxW={'70px'} />
+              <Progress mt={2} rounded={'md'} value={stat} colorScheme={'gray'} maxW={'70px'}/>
             </StatNumber>
           </Box>
         </Flex>

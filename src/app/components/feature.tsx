@@ -26,12 +26,12 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
         {icon}
       </Flex>
       <Text textAlign={'center'} fontWeight={600}>{title}</Text>
-      <Text textAlign={'justify'} color={'gray.600'}>{text}</Text>
+      <Text textAlign={'justify'} color={'gray.500'}>{text}</Text>
     </Stack>
   );
 };
 
-export default function SimpleThreeColumns() {
+export default function Services() {
   return (
     
     <Box p={20} mx={'auto'} mt={10}>
@@ -41,21 +41,21 @@ export default function SimpleThreeColumns() {
           icon={<Icon as={MdPhoto} w={10} h={10} color={'gray.600'}/>}
           title={'Graphic Design'}
           text={
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+            'Graphic design uses visual elements to communicate messages and evoke emotions, playing a vital role in marketing, branding, and shaping perceptions.'
           }
         />
         <Feature
           icon={<Icon as={MdMotionPhotosOn} w={10} h={10} color={'gray.600'}/>}
           title={'Illustration'}
           text={
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+            'Illustration is the art of creating visual representations of ideas, concepts, or narratives using various techniques and mediums such as pencils, paints, or digital tools.'
           }
         />
         <Feature
           icon={<Icon as={MdPhotoCameraFront} w={10} h={10} color={'gray.600'}/>}
           title={'Vedio Graphics'}
           text={
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+            'Video graphics refer to the computer-generated imagery used in video production, such as visual effects, animations, and motion graphics, to enhance the visual appeal and communication of the video content.'
           }
         />
       </SimpleGrid>

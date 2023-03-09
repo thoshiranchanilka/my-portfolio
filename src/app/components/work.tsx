@@ -25,39 +25,11 @@ const card = [
       'https://images2.imgbox.com/b3/72/QmhiiLdN_o.png',
   },
   {
-    title: 'Food Ad Design.',
-    des:
-      'A social media ad that designed for local food restaurant.',
-    img:
-      'https://images2.imgbox.com/c3/dd/aFcZ8I9L_o.png',
-  },
-  {
     title: 'T-Shirt Design.',
     des:
       'T shirt design and social media post for Helaya.',
     img:
       'https://images2.imgbox.com/eb/14/JRYzsBbc_o.png',
-  },
-  {
-    title: 'Shoe ad Design.',
-    des:
-      'Product ad design for Kingsman the local Brand.',
-    img:
-      'https://images2.imgbox.com/ff/49/U4yMVXfS_o.png',
-  },
-  {
-    title: 'Event Ad Design.',
-    des:
-      'Social media ad for the Esperance 2019 event.',
-    img:
-      'https://images2.imgbox.com/01/df/8suW9XuZ_o.png',
-  },
-  {
-    title: 'Social Media Post.',
-    des:
-      'Social media reminder post for Space Odyssey.',
-    img:
-      'https://images2.imgbox.com/bc/1d/c2pmFdtD_o.png',
   },
   {
     title: 'Brand Design.',
@@ -67,20 +39,6 @@ const card = [
       'https://images2.imgbox.com/ae/67/vnfrtDOy_o.png',
   },
   {
-    title: 'Badge Design.',
-    des:
-      'Badge design for the media unit of DSSNS Ampra.',
-    img:
-      'https://images2.imgbox.com/5d/67/BYBSwKNK_o.png',
-  },
-  {
-    title: 'Logo Design.',
-    des:
-      'Logo design for Debating sociaty of DSSNS Ampra.',
-    img:
-      'https://images2.imgbox.com/a6/68/hoYHwZDl_o.png',
-  },
-  {
     title: 'Album Cover.',
     des:
       'Album cover design for Posindhu Rasanka.',
@@ -88,39 +46,11 @@ const card = [
       'https://images2.imgbox.com/91/b9/6ZgWM0UH_o.png',
   },
   {
-    title: 'Flyer Design.',
-    des:
-      'A flyer design for a local tuter.',
-    img:
-      'https://images2.imgbox.com/bb/3e/nS8idP0q_o.png',
-  },
-  {
-    title: 'Banner Design.',
-    des:
-      'A banner design for a local food restaurant.',
-    img:
-      'https://images2.imgbox.com/34/6f/tqmnxRkz_o.png',
-  },
-  {
-    title: 'Flyer Design.',
-    des:
-      'A flyer design for a local food restaurant.',
-    img:
-      'https://images2.imgbox.com/ef/d3/dOUwUvWn_o.png',
-  },
-  {
     title: 'T-shirt Design.',
     des:
       'A t-shirt design for school cadet.',
     img:
       'https://images2.imgbox.com/11/25/amHIfSeW_o.png',
-  },
-  {
-    title: 'Cover Design.',
-    des:
-      'A social media cover design for a local clothing brand.',
-    img:
-      'https://images2.imgbox.com/ab/6a/rjFSoJld_o.png',
   },
 ];
 
@@ -173,6 +103,11 @@ function Card(props: CardProps) {
         mb={5}
         rounded={'xl'}
         shadow={'lg'}
+        filter={'grayscale(100%)'}
+        _hover={{
+                filter: 'grayscale(0%)',
+                transition: '1s ease',
+              }}
       />
     </Flex>
   );
@@ -207,10 +142,11 @@ export default function work() {
       <Button
         as={'a'}
         href={'https://www.behance.net/thoshirachanilka'}
-        maxW={'140px'}
+        maxW={'160px'}
         mx={'auto'}
         px={4}
         fontSize={'md'}
+        shadow={'xl'}
         rounded={'full'}
         bg={useColorModeValue('gray.700', 'gray.600')}
         color={'white'}

@@ -10,20 +10,24 @@ import {
     useColorModeValue,
   } from '@chakra-ui/react';
   
-  export default function SplitWithImage() {
+  export default function About() {
     return (
       <Container maxW={'5xl'} py={12}>
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
         <Flex>
             <Image
               rounded={'3xl'}
-              shadow={'dark-lg'}
+              shadow={'xl'}
               alt={'feature image'}
               src={
                 'https://thumbs2.imgbox.com/7a/a4/yvL6Rett_t.jpg'
               }
               objectFit={'cover'}
               filter={'grayscale(100%)'}
+              _hover={{
+                filter: 'grayscale(0%)',
+                transition: '1s ease',
+              }}
             />
           </Flex>
           <Stack spacing={4} mt={2}>
@@ -42,11 +46,13 @@ import {
             </Text>
             <Button
               as={'a'}
+              target={'_blank'}
               href={'https://thoshiranslinktree.netlify.app/'}
               maxW={'140px'}
               mx={'auto'}
               px={4}
               fontSize={'md'}
+              shadow={'xl'}
               rounded={'full'}
               bg={useColorModeValue('gray.700', 'gray.600')}
               color={'white'}

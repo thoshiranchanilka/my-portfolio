@@ -41,18 +41,19 @@ import {
                 <Button
                   as={'a'}
                   target={'_blank'}
-                  href={'#'}
+                  href={'https://drive.google.com/file/d/1NqY_yG4Bg0eHvydACbvbpIkAar_CBbvf/view?usp=share_link'}
                   mt={2}
                   size={'sm'}
                   px={'10'}
                   rounded={'full'}
                   bg={'gray.600'}
                   color={'white'}
-                  shadow={'lg'}
+                  shadow={'xl'}
                   _hover={{
                     bg: 'blue.400',
                     boxShadow: '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)',
-                  }}>
+                  }}
+                  >
                  Resume
                 </Button>
               </Box>
