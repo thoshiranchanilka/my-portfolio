@@ -1,28 +1,46 @@
-'use client'
-import theme from './lib/theme'
-import { ChakraProvider } from '@chakra-ui/react'
-import Nav from './components/nav'
-import Footer from './components/footer'
-import Head from './components/head'
+"use client";
+import theme from "./lib/theme";
+import { ChakraProvider } from "@chakra-ui/react";
+import Nav from "./components/nav";
+import Footer from "./components/footer";
+import Head from "./components/head";
+import SplashScreen from "./components/splashScreen";
 
-import '@fontsource/azeret-mono/800.css'
-import '@fontsource/courier-prime/400.css'
+import "@fontsource/azeret-mono/800.css";
+import "@fontsource/courier-prime/400.css";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+  const [isLoading, setIsLoading] = useState(isHome);
+
+  useEffect(() => {
+    if (isLoading) {
+      return;
+    }
+  }, [isLoading]);
   return (
     <html lang="en">
-       <Head />
+      <Head />
       <body>
-          <ChakraProvider theme={theme}>
-            <Nav />
-            {children}
-            <Footer />
-          </ChakraProvider>
+        <ChakraProvider theme={theme}>
+          {isLoading && isHome ? (
+            <SplashScreen finishLoading={() => setIsLoading(false)} />
+          ) : (
+            <>
+              <Nav />
+              {children}
+              <Footer />
+            </>
+          )}
+        </ChakraProvider>
       </body>
     </html>
-  )
+  );
 }
