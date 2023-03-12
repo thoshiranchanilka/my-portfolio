@@ -2,7 +2,6 @@ import {
     Box,
     Heading,
     Text,
-    Stack,
     AspectRatio,
     useColorModeValue,
     Button,
@@ -34,11 +33,11 @@ import {
         <Text textAlign={'center'} mt={8} fontSize={'lg'}>
           Pay a visit and feel free to Subscribe.
         </Text>
-        <Box textAlign={'center'}>
+        <Box textAlign={'center'} mb={20}>
         <Button
               as={'a'}
               target={'_blank'}
-              href={'#'}
+              href={'https://www.youtube.com/@ThoshiranChanilka'}
               maxW={'140px'}
               mx={'auto'}
               px={4}

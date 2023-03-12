@@ -1,15 +1,16 @@
 import { extendTheme } from "@chakra-ui/react";
 
 //Fonts
-import '@fontsource/azeret-mono/800.css'
-import '@fontsource/azeret-mono/300.css'
-import '@fontsource/courier-prime/400.css'
+import '@fontsource/urbanist/900.css'
+import '@fontsource/urbanist/400.css'
+import '@fontsource/overpass-mono/400.css'
 
 const theme = extendTheme({
     fonts: {
-      heading: `'Azeret Mono', monospace`,
-      body: `'Courier Prime', monospace`,
+      heading: `'Urbanist', sans-serif`,
+      body: `'Overpass Mono', monospace`,
     },
+    
   })
 
 export default theme;
