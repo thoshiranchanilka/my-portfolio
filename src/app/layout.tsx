@@ -6,8 +6,6 @@ import Footer from "./components/footer";
 import Head from "./components/head";
 import SplashScreen from "./components/splashScreen";
 
-import "@fontsource/azeret-mono/800.css";
-import "@fontsource/courier-prime/400.css";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 

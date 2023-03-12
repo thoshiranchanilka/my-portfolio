@@ -15,7 +15,7 @@ export default function SplashScreen({ finishLoading }: any) {
     if (isMounted) {
       const timeout = setTimeout(() => {
         finishLoading();
-      }, 2000); // Change 3000 to the number of milliseconds you want the splash screen to show
+      }, 2000);
       return () => clearTimeout(timeout);
     }
   }, [isMounted]);
