@@ -1,10 +1,6 @@
 import { extendTheme } from "@chakra-ui/react";
 
-//Fonts
-import "@fontsource/poppins";
-import "@fontsource/space-grotesk";
-
-const config = {
+const theme = extendTheme({
   initialColorMode: "dark",
   useSystemColorMode: true,
   fonts: {
@@ -18,8 +14,6 @@ const config = {
       900: "#338c85", //Teal 400
     },
   },
-};
-
-const theme = extendTheme({ config });
+});
 
 export default theme;

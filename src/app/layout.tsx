@@ -9,6 +9,10 @@ import SplashScreen from "./components/splashScreen";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
+//Font Weights
+import "@fontsource/poppins/500.css";
+import "@fontsource/space-grotesk/700.css";
+
 export default function RootLayout({
   children,
 }: {
