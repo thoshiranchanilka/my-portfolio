@@ -1,16 +1,19 @@
 import { extendTheme } from "@chakra-ui/react";
 
-//Fonts
-import '@fontsource/urbanist/900.css'
-import '@fontsource/urbanist/400.css'
-import '@fontsource/overpass-mono/400.css'
-
 const theme = extendTheme({
-    fonts: {
-      heading: `'Urbanist', sans-serif`,
-      body: `'Overpass Mono', monospace`,
+  initialColorMode: "dark",
+  useSystemColorMode: true,
+  fonts: {
+    heading: `'Space Grotesk', sans-serif`,
+    body: `'Poppins', sans-serif`,
+  },
+  colors: {
+    brand: {
+      100: "#d9f0Ed", //Cyan 100
+      500: "#0099fe", //Blue 300
+      900: "#338c85", //Teal 400
     },
-    
-  })
+  },
+});
 
 export default theme;
