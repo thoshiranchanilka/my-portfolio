@@ -12,9 +12,6 @@ import Contact from './components/contact'
 export default function Home() {
   return (
     <>
-      <Head>
-        <meta name="google-site-verification" content="EwZo3L6BAR_o-LhyxRZLtBOr5nHTjPBzOa5UE_Monjg" />
-      </Head>
       <main>
         
         <Hero />
