@@ -29,9 +29,7 @@ export default function RootLayout({
   }, [isLoading]);
   return (
     <html lang="en">
-      <Head>
-        <meta name="google-site-verification" content="EwZo3L6BAR_o-LhyxRZLtBOr5nHTjPBzOa5UE_Monjg" />
-      </Head>
+      <Head />
       <body>
         <ChakraProvider theme={theme}>
           {isLoading && isHome ? (
