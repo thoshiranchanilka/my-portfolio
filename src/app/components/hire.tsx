@@ -16,7 +16,7 @@ export default function Hire() {
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
         <Stack spacing={4} mt={2}>
           <Heading>Hire me at Fiverr.</Heading>
-          <Text color={"gray.500"} fontSize={"lg"} textAlign={"justify"}>
+          <Text color={"gray.500"} fontSize={"lg"} textAlign={"left"}>
             If you are interested feel free to checkout my fiverr profile.
           </Text>
           <Button

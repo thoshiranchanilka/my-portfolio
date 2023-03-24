@@ -34,7 +34,7 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
       <Text textAlign={"center"} fontWeight={600}>
         {title}
       </Text>
-      <Text textAlign={"justify"} color={"gray.500"} maxW={"40ch"}>
+      <Text textAlign={"center"} color={"gray.500"} maxW={"40ch"}>
         {text}
       </Text>
     </Stack>
