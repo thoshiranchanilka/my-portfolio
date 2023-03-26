@@ -55,6 +55,7 @@ import {
           <Box>
             <VStack spacing={{ base: 4, md: 8, lg: 20 }}>
               <Heading
+              color={useColorModeValue("brand.800", "brand.600")}
                 fontSize={{
                   base: '4xl',
                   md: '5xl',
@@ -178,12 +179,13 @@ import {
                     <Button
                       colorScheme="gray"
                       rounded={'full'}
-                      bg="gray.500"
+                      bg={useColorModeValue("gray.800", "gray.500")}
                       color="white"
                       _hover={{
-                        bg: 'blue.400',
-                        color: 'white',
-                        boxShadow: '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)',
+                        color: "gray.800",
+                        bg: "brand.600",
+                        boxShadow:
+                          "0px 1px 25px -5px rgb(255 255 0 / 48%), 0 10px 10px -5px rgb(255 255 0 / 43%)",
                       }}
                        >
                       Send Message

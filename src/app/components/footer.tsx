@@ -75,7 +75,7 @@ import {
             spacing={4}
             justify={{ base: 'center', md: 'space-between' }}
             align={{ base: 'center', md: 'center' }}>
-            <Text textColor={'gray.500'} textAlign={{ base: 'center', md: 'start' }}>© 2023 Thoshiran Chanilka. All rights reserved</Text>
+            <Text textColor={'gray.500'} textAlign={{ base: 'center', md: 'start' }}>© 2023 Thoshiran Chanilka. All rights reserved<br />creted with Next.js & Chakra UI.</Text>
             <Stack direction={'row'} spacing={6}>
               <SocialButton label={'Twitter'} href={'https://mobile.twitter.com/thoshiranC'}>
                 <FaTwitter />

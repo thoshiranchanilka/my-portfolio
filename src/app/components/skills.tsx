@@ -41,7 +41,7 @@ import {
               {title}
             </StatLabel>
             <StatNumber>
-              <Progress mt={2} rounded={'md'} value={stat} colorScheme={'gray'} maxW={'70px'}/>
+              <Progress mt={2} rounded={'md'} value={stat} colorScheme={'brand'} maxW={'70px'}/>
             </StatNumber>
           </Box>
         </Flex>
@@ -57,6 +57,7 @@ import {
           fontSize={'4xl'}
           py={10}
           mb={10}
+          color={useColorModeValue("brand.800", "brand.600")}
           >
            Some Skills I have.
         </Heading>
@@ -82,7 +83,7 @@ import {
             icon={<SiAdobepremierepro size={'3em'} />}
           />
         </SimpleGrid>
-        <Text textAlign={'center'} mt={10} fontSize={'lg'}>
+        <Text textAlign={'center'} mt={10} fontSize={'lg'} color={'gray.500'}>
           also I used to work with softwares like Figma, Audacity, Code, Filmora, etc.
         </Text>
       </Box>

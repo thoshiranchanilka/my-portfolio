@@ -123,7 +123,7 @@ export default function work() {
       direction={'column'}
       width={'full'}
       overflow={'hidden'}>
-      <Heading textAlign={'center'} fontSize={'4xl'}>
+      <Heading textAlign={'center'} fontSize={'4xl'} color={useColorModeValue("brand.800", "brand.600")}>
         Some Work I have delivered.
       </Heading>
       <SimpleGrid
@@ -136,7 +136,7 @@ export default function work() {
           <Card {...cardInfo} index={index} />
         ))}
       </SimpleGrid>
-      <Text fontSize={'lg'}>
+      <Text fontSize={'lg'} color={'gray.500'}>
         Check my work at
       </Text>
       <Button

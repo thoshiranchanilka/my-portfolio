@@ -20,7 +20,7 @@ import {
               shadow={'xl'}
               alt={'feature image'}
               src={
-                'https://thumbs2.imgbox.com/7a/a4/yvL6Rett_t.jpg'
+                '/feature.jpg'
               }
               objectFit={'cover'}
               filter={'grayscale(100%)'}
@@ -31,7 +31,7 @@ import {
             />
           </Flex>
           <Stack spacing={4} mt={2}>
-            <Heading>Who am I?</Heading>
+            <Heading color={useColorModeValue("brand.800", "brand.600")}>Who am I?</Heading>
             <Text color={'gray.500'} fontSize={'lg'} textAlign={'justify'}>
             Hi, I'm Thoshiran Chanilka, a passionate graphics designer 
             with over 6 years of experience. I specialize in using software 
@@ -54,16 +54,16 @@ import {
               fontSize={'md'}
               shadow={'xl'}
               rounded={'full'}
-              bg={useColorModeValue('gray.700', 'gray.600')}
+              bg={useColorModeValue("gray.800", "gray.500")}
               color={'white'}
         
               _hover={{
-                bg: 'blue.400',
-                boxShadow: '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)',
+                  color: "gray.800",
+                  bg: "brand.600",
+                  boxShadow:
+                    "0px 1px 25px -5px rgb(255 255 0 / 48%), 0 10px 10px -5px rgb(255 255 0 / 43%)",
               }}
-              _focus={{
-                bg: 'blue.500',
-              }}>
+              >
               LinkTree.
             </Button>
           </Stack>

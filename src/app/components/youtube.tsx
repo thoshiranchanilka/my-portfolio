@@ -14,10 +14,11 @@ import {
           textAlign={'center'}
           fontSize={'4xl'}
           mb={5}
+          color={useColorModeValue("brand.800", "brand.600")}
           >
           also I'm a Youtuber.
         </Heading>
-        <Text textAlign={'center'} mt={1} fontSize={'lg'}>
+        <Text textAlign={'center'} mt={10} fontSize={'lg'} color={'gray.500'}>
           check out my latest performence.
         </Text>
         <Box mt={5}>
@@ -30,7 +31,7 @@ import {
             />
         </AspectRatio>
         </Box>
-        <Text textAlign={'center'} mt={8} fontSize={'lg'}>
+        <Text textAlign={'center'} mt={8} fontSize={'lg'} color={'gray.500'}>
           Pay a visit and feel free to Subscribe.
         </Text>
         <Box textAlign={'center'} mb={20}>

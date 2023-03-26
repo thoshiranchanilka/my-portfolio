@@ -15,14 +15,14 @@ export default function Hire() {
     <Container maxW={"5xl"} py={12}>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
         <Stack spacing={4} mt={2}>
-          <Heading>Hire me at Fiverr.</Heading>
+          <Heading color={useColorModeValue("brand.800", "brand.600")}>Hire me at Fiverr.</Heading>
           <Text color={"gray.500"} fontSize={"lg"} textAlign={"justify"}>
             If you are interested feel free to checkout my fiverr profile.
           </Text>
           <Button
             as={"a"}
             target={"_blank"}
-            href={"#"}
+            href={"https://www.fiverr.com/thoshiranc"}
             maxW={"140px"}
             mx={"auto"}
             px={4}
