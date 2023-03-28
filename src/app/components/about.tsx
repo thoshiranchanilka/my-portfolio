@@ -31,7 +31,7 @@ import {
             />
           </Flex>
           <Stack spacing={4} mt={2}>
-            <Heading color={useColorModeValue("brand.800", "brand.600")}>Who am I?</Heading>
+            <Heading color={useColorModeValue("gray.800", "whiteAlpha.900")}>Who am I?</Heading>
             <Text color={'gray.500'} fontSize={'lg'} textAlign={'justify'}>
             Hi, I'm Thoshiran Chanilka, a passionate graphics designer 
             with over 6 years of experience. I specialize in using software 

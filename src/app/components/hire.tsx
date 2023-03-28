@@ -14,8 +14,8 @@ export default function Hire() {
   return (
     <Container maxW={"5xl"} py={12}>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-        <Stack spacing={4} mt={2}>
-          <Heading color={useColorModeValue("brand.800", "brand.600")}>Hire me at Fiverr.</Heading>
+        <Stack spacing={8} mt={2} >
+          <Heading color={useColorModeValue("gray.800", "whiteAlpha.900")}>Hire me at Fiverr.</Heading>
           <Text color={"gray.500"} fontSize={"lg"} textAlign={"justify"}>
             If you are interested feel free to checkout my fiverr profile.
           </Text>
@@ -45,16 +45,15 @@ export default function Hire() {
         <Flex>
           <Image
             rounded={"3xl"}
-            shadow={"xl"}
             alt={"feature image"}
             src={
-              "https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+              "/hire.svg"
             }
             objectFit={"cover"}
             filter={"grayscale(100%)"}
             _hover={{
               filter: "grayscale(0%)",
-              transition: "1s ease",
+              transition: "0.5s ease",
             }}
           />
         </Flex>

@@ -55,7 +55,7 @@ import {
           <Box>
             <VStack spacing={{ base: 4, md: 8, lg: 20 }}>
               <Heading
-              color={useColorModeValue("brand.800", "brand.600")}
+              color={useColorModeValue("gray.800", "whiteAlpha.900")}
                 fontSize={{
                   base: '4xl',
                   md: '5xl',
@@ -79,9 +79,9 @@ import {
                       fontSize="3xl"
                       icon={<MdEmail />}
                       _hover={{
-                        bg: 'blue.400',
-                        color: 'white',
-                        boxShadow: '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)',
+                        bg: 'brand.600',
+                        color: 'gray.700',
+                        boxShadow: '0px 1px 25px -5px rgb(255 255 0 / 48%), 0 10px 10px -5px rgb(255 255 0 / 43%)',
                       }}
                       isRound
                     />
@@ -95,9 +95,9 @@ import {
                       fontSize="3xl"
                       icon={<BsGithub />}
                       _hover={{
-                        bg: 'blue.400',
-                        color: 'white',
-                        boxShadow: '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)',
+                        bg: 'brand.600',
+                        color: 'gray.700',
+                        boxShadow: '0px 1px 25px -5px rgb(255 255 0 / 48%), 0 10px 10px -5px rgb(255 255 0 / 43%)',
                       }}
                       isRound
                     />
@@ -110,9 +110,9 @@ import {
                       size="lg"
                       icon={<BsTwitter size="28px" />}
                       _hover={{
-                        bg: 'blue.400',
-                        color: 'white',
-                        boxShadow: '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)',
+                        bg: 'brand.600',
+                        color: 'gray.700',
+                        boxShadow: '0px 1px 25px -5px rgb(255 255 0 / 48%), 0 10px 10px -5px rgb(255 255 0 / 43%)',
                       }}
                       isRound
                     />
@@ -125,9 +125,9 @@ import {
                       size="lg"
                       icon={<BsInstagram size="28px" />}
                       _hover={{
-                        bg: 'blue.400',
-                        color: 'white',
-                        boxShadow: '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)',
+                        bg: 'brand.600',
+                        color: 'gray.700',
+                        boxShadow: '0px 1px 25px -5px rgb(255 255 0 / 48%), 0 10px 10px -5px rgb(255 255 0 / 43%)',
                       }}
                       isRound
                     />

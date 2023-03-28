@@ -21,7 +21,7 @@ export default function hero() {
           <Box marginLeft={{ base: 10, md: 20 }} mx={{ base: "auto" }}>
             <Heading>
               <Text
-                color={useColorModeValue("gray.800", "gray.500")}
+                color={useColorModeValue("gray.600", "gray.500")}
                 as={"span"}
                 position={"relative"}
                 fontSize={{ base: "lg", md: "2xl", lg: "2xl" }}
@@ -30,14 +30,14 @@ export default function hero() {
               </Text>
               <br />{" "}
               <Text
-                color={useColorModeValue("brand.800", "brand.600")}
+                color={useColorModeValue("gray.800", "whiteAlpha.900")}
                 as={"span"}
                 fontSize={{ base: "2xl", md: "4xl", lg: "4xl" }}
               >
                 Thoshiran Chanilka
               </Text>{" "}
             </Heading>
-            <Text fontSize={{ base: "sm", lg: "md" }} color={useColorModeValue("gray.800", "gray.500")}>
+            <Text fontSize={{ base: "sm", lg: "md" }} color={useColorModeValue("gray.600", "gray.500")}>
               A creative graphics designer and devoloper.
             </Text>
             <Box alignItems={"flex-start"}>
@@ -51,7 +51,7 @@ export default function hero() {
                 size={"sm"}
                 px={"10"}
                 rounded={"full"}
-                bg={useColorModeValue("gray.800", "gray.500")}
+                bg={useColorModeValue("gray.700", "gray.500")}
                 color={"white"}
                 shadow={"xl"}
                 _hover={{

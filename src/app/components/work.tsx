@@ -103,9 +103,8 @@ function Card(props: CardProps) {
         mb={5}
         rounded={'xl'}
         shadow={'lg'}
-        filter={'grayscale(100%)'}
         _hover={{
-                filter: 'grayscale(0%)',
+                shadow: '2xl',
                 transition: '1s ease',
               }}
       />
@@ -123,7 +122,7 @@ export default function work() {
       direction={'column'}
       width={'full'}
       overflow={'hidden'}>
-      <Heading textAlign={'center'} fontSize={'4xl'} color={useColorModeValue("brand.800", "brand.600")}>
+      <Heading textAlign={'center'} fontSize={'4xl'} color={useColorModeValue("gray.800", "whiteAlpha.900")}>
         Some Work I have delivered.
       </Heading>
       <SimpleGrid

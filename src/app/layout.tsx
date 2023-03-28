@@ -11,7 +11,7 @@ import { useEffect, useState } from "react";
 
 //Font Weights
 import "@fontsource/abeezee/400.css";
-import "@fontsource/montserrat/700.css";
+import "@fontsource/montserrat/800.css";
 
 export default function RootLayout({
   children,

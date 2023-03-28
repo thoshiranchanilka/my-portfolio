@@ -20,7 +20,7 @@ export default function Home() {
         <Skills />
         <Work />
         <Hire />
-        <Youtube />
+        
         <Contact />
         
       </main>

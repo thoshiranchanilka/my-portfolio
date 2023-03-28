@@ -14,7 +14,7 @@ import {
           textAlign={'center'}
           fontSize={'4xl'}
           mb={5}
-          color={useColorModeValue("brand.800", "brand.600")}
+          color={useColorModeValue("gray.800", "whiteAlpha.900")}
           >
           also I'm a Youtuber.
         </Heading>

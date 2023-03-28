@@ -45,17 +45,17 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
 export default function Services() {
   return (
     <Box p={20} mx={"auto"} mt={10}>
-      <Heading textAlign={"center"} color={useColorModeValue("brand.800", "brand.600")}>What Do I do !</Heading>
+      <Heading textAlign={"center"} color={useColorModeValue("gray.800", "whiteAlpha.900")}>What Do I do !</Heading>
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
         <Feature
-          icon={<Icon as={MdPhoto} w={10} h={10} color={"brand.800"} />}
+          icon={<Icon as={MdPhoto} w={10} h={10} color={"gray.500"} />}
           title={"Graphic Design"}
           text={
             "Graphic design uses visual elements to communicate messages and evoke emotions, playing a vital role in marketing, branding, and shaping perceptions."
           }
         />
         <Feature
-          icon={<Icon as={MdMotionPhotosOn} w={10} h={10} color={"brand.800"} />}
+          icon={<Icon as={MdMotionPhotosOn} w={10} h={10} color={"gray.500"} />}
           title={"Illustration"}
           text={
             "Illustration is the art of creating visual representations of ideas, concepts, or narratives using various techniques and mediums such as pencils, paints, or digital tools."
@@ -63,7 +63,7 @@ export default function Services() {
         />
         <Feature
           icon={
-            <Icon as={MdPhotoCameraFront} w={10} h={10} color={"brand.800"} />
+            <Icon as={MdPhotoCameraFront} w={10} h={10} color={"gray.500"} />
           }
           title={"Vedio Graphics"}
           text={
