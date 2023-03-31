@@ -69,7 +69,7 @@ export default function hero() {
           height={{ base: "400px", md: "500px" }}
           mx={{ base: "auto", md: "1" }}
           objectFit={"cover"}
-          src={"https://images2.imgbox.com/30/3e/vqusIttK_o.png"}
+          src={"./subject.png"}
         />
       </Flex>
     </Stack>

@@ -19,7 +19,7 @@ export default function About() {
             rounded={"3xl"}
             shadow={"xl"}
             alt={"feature image"}
-            src={"https://thumbs2.imgbox.com/7a/a4/yvL6Rett_t.jpg"}
+            src={"./aboutme.jpg"}
             objectFit={"cover"}
             filter={"grayscale(100%)"}
             _hover={{

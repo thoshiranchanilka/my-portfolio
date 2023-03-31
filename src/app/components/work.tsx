@@ -13,32 +13,32 @@ const card = [
   {
     title: "Product Ad Design.",
     des: "A social media ad that designed for a local medical product.",
-    img: "https://images2.imgbox.com/37/ea/pPWpBsH6_o.png",
+    img: "./work/01.png",
   },
   {
     title: "Event Ad Design.",
     des: "Pre Event ad that designed for Space Odyssey",
-    img: "https://images2.imgbox.com/b3/72/QmhiiLdN_o.png",
+    img: "./work/02.png",
   },
   {
     title: "T-Shirt Design.",
     des: "T shirt design and social media post for Helaya.",
-    img: "https://images2.imgbox.com/eb/14/JRYzsBbc_o.png",
+    img: "./work/03.png",
   },
   {
     title: "Brand Design.",
     des: "Logo design for Tradition the local music band.",
-    img: "https://images2.imgbox.com/ae/67/vnfrtDOy_o.png",
+    img: "./work/04.png",
   },
   {
     title: "Album Cover.",
     des: "Album cover design for Posindhu Rasanka.",
-    img: "https://images2.imgbox.com/91/b9/6ZgWM0UH_o.png",
+    img: "./work/05.png",
   },
   {
     title: "T-shirt Design.",
     des: "A t-shirt design for school cadet.",
-    img: "https://images2.imgbox.com/11/25/amHIfSeW_o.png",
+    img: "./work/06.png",
   },
 ];
 
