@@ -1,3 +1,4 @@
+"use client";
 import {
   Box,
   Button,
@@ -11,11 +12,15 @@ import {
   InputGroup,
   InputLeftElement,
   Link,
+  Text,
   Stack,
   Textarea,
   useClipboard,
   useColorModeValue,
   VStack,
+  AlertIcon,
+  Alert,
+  useToast,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { BsGithub, BsInstagram, BsPerson, BsTwitter } from "react-icons/bs";
@@ -50,13 +55,14 @@ export default function Contact() {
   const { hasCopied, onCopy } = useClipboard("bgtch8356@gmail.com");
 
   //For Nodemailer
+  const toast = useToast();
   const [state, setState] = useState(initState);
-  const [touched, setTouched] = useState({});
+  const [touched, setTouched] = useState<any>({});
 
-  const { values, isLoading } = state;
+  const { values, isLoading, error }: any = state;
 
   const onBlur = ({ target }: any) =>
-    setTouched((prev) => ({ ...prev, [target.name]: true }));
+    setTouched((prev: any) => ({ ...prev, [target.name]: true }));
 
   const handleChange = ({ target }: any) =>
     setState((prev) => ({
@@ -72,7 +78,29 @@ export default function Contact() {
       ...prev,
       isLoading: true,
     }));
-    await sendContactForm(values);
+
+    try {
+      await sendContactForm(values);
+      setTouched({});
+      setState(initState);
+      toast({
+        title: "Message sent.",
+        status: "success",
+        duration: 2000,
+        position: "top",
+      });
+    } catch (error) {
+      setState((prev) => ({
+        ...prev,
+        isLoading: false,
+      }));
+      toast({
+        title: error.message,
+        status: "error",
+        duration: 2000,
+        position: "top",
+      });
+    }
   };
 
   return (
