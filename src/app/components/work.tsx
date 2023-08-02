@@ -159,6 +159,10 @@ export default function work() {
         }}>
         Behance.
       </Button>
+      <Text fontSize={'lg'} color={'gray.500'} mt={16}>
+        Also I'm Currently working as a video editor in DP Coding School.<br/>
+        you can see my video edits in DP Coding school Youtube Channel.
+      </Text>
     </Flex>
   );
 }
