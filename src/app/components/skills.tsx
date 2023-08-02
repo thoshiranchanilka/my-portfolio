@@ -74,12 +74,12 @@ import {
           />
           <StatsCard
             title={'After Effects'}
-            stat={70}
+            stat={85}
             icon={<SiAdobeaftereffects size={'3em'} />}
           />
           <StatsCard
             title={'Premier Pro'}
-            stat={65}
+            stat={75}
             icon={<SiAdobepremierepro size={'3em'} />}
           />
         </SimpleGrid>
